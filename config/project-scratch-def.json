@@ -1,0 +1,12 @@
+{
+  "orgName": "SFDCFacts Academy",
+  "edition": "Developer",
+  "hasSampleData": true,
+  "features": [],
+  "settings": {
+    "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+    }
+}
+
+}
