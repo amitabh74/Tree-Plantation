@@ -28,8 +28,8 @@ private class TreeLocationControllerTest {
         insert tree;
 
         City__c city = new City__c(name='Delhi', target__c=35000);
-        city.Location__latitude__s = 28.635308;
-        city.Location__longitude__s = 77.22496;
+        city.Location__latitude__s = 28.644800;
+        city.Location__longitude__s = 77.216721;
         insert city;
 
         Tree_Plantation__c treePlant = new Tree_Plantation__c(age__c=50, Number_Of_Tree_Planted__c=50000);
@@ -46,8 +46,8 @@ private class TreeLocationControllerTest {
         Test.startTest();
         System.assertEquals(1, plants.size(), 'Number of tree records does not match');
         System.assertEquals(plants[0].Planted_In__r.Name, 'Delhi', 'Name does not match');
-        System.assertEquals(plants[0].Planted_In__r.Location__Latitude__s, 28.635308, 'Latitude does not match');
-        System.assertEquals(plants[0].Planted_In__r.Location__longitude__s, 77.22496, 'Lonngitude does not match');
+        System.assertEquals(plants[0].Planted_In__r.Location__Latitude__s, 28.644800, 'Latitude does not match');
+        System.assertEquals(plants[0].Planted_In__r.Location__longitude__s, 77.216721, 'Lonngitude does not match');
         Test.stopTest();
 
     }
